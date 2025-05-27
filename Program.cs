@@ -17,6 +17,20 @@ namespace miniPro
 
             Weapon weapon = new Weapon("bbb", "bbb", 100);
             weapon.Shoot();
+
+            //commando.Name
+            Console.WriteLine(commando.SeyName("GENERAL"));
+            Console.WriteLine(commando.SeyName("COLONEL"));
+            Console.WriteLine(commando.SeyName("_"));
+            Console.WriteLine(commando.CodeName);
+            commando.CodeName = "456";
+            Console.WriteLine(commando.CodeName);
+
+            Commando[] commandos = { commando, new SeaCommando("ccc", "123"), new AirCommando("ddd", "789") };
+            foreach(Commando com in commandos)
+            {
+                com.Attack();
+            }
         }
     }
 }

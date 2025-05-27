@@ -8,8 +8,8 @@ namespace miniPro
 {
     internal class Commando
     {
-        public string Name { get;private set; }
-        public string CodeName { get;private set; }
+        private string Name { get; }
+        public string CodeName { get; set; }
         public string[] Tools { get; } = new string[] { "Hammer", "Chisel", "Rope", "Bag", "Water bottle" };
         public string Status { get; private set; } = "standing";
 
@@ -30,9 +30,19 @@ namespace miniPro
             Console.WriteLine("sulder hideing");
             Status = "Hide";
         }
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine($"The {CodeName} Attacking");
+        }
+
+        public string SeyName(string commanderRank)
+        {
+            if(commanderRank == "GENERAL")
+                return(Name);
+            else if(commanderRank == "COLONEL")
+                return(CodeName);
+            else
+                return("xxxxxxxxxxxxxxxxxxx");
         }
 
     }
