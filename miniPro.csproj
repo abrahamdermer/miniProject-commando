@@ -44,11 +44,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AirCommando.cs" />
+    <Compile Include="AK47.cs" />
     <Compile Include="Commando.cs" />
+    <Compile Include="CommandoFactory.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyFactory.cs" />
+    <Compile Include="GAME.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="FactoryBase.cs" />
+    <Compile Include="Knife.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="M-16.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeaCommando.cs" />
+    <Compile Include="Stone.cs" />
     <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
